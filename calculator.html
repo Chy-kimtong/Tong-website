@@ -1,0 +1,40 @@
+<html>
+<head>
+<script>
+    
+function cal(){
+    var op = document.getElementById("op").value;
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    var res = document.getElementById("res").value;
+    if (op=="+"){
+        document.getElementById("res").value = num1 + num2;
+    }
+    else if (op == "-") {
+        document.getElementById("res").value = num1 - num2;
+    }
+    else if (op == "x") {
+        document.getElementById("res").value = num1 * num2;
+    }
+    else if (op == "/") {
+        document.getElementById("res").value = num1/ num2;
+    }
+}
+</script>
+</head>
+<input type="text" id="num1">
+<br>
+<select id='op'>
+<option value="+">+
+</option>
+<option value="-">-
+</option>
+<option value="x">x
+</option>
+<option value="/">/
+</option>
+</select>
+<input type="text" id="num2">
+<button onclick="cal()">=</button>
+<input type="text" id="res">
+</html>

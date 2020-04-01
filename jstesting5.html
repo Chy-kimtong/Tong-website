@@ -1,0 +1,41 @@
+ <!doctype html>
+<html>
+<head>
+<title>Untitled Document</title>
+<script>
+
+var car={
+car_brand:"tesla",
+car_model:"model_3",
+price:35000,
+
+testa:function()
+{
+return "this car has auto pilot";
+}
+}
+car.fuletype="electric"
+document.write("<h1>"+car.fuletype+"</h1>")
+
+function cars(car_brand,car_model,price)
+{
+this.car_brand=car_brand;
+this.car_model=car_model;
+this.price=price;
+this.testa1=function()
+{
+document.write("<marquee>this car has atomatic pilot</marquee>");
+}
+}
+var c1=new cars("tesla","model_3",35000)
+var c2=new cars("bmw","model_4",45000)
+c1.testa1()
+document.write("<h2>"+c2.car_model+"</h2>")
+var str=new String()
+document.write("<h2>"+typeof(str)+"</h2>")
+</script>
+</head>
+
+<body>
+</body>
+</html>/

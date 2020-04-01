@@ -1,0 +1,93 @@
+<!DOCTYPE hthml>
+<html>
+    <head>
+        <title>Hospital homepage</title>
+        <style>
+            body{
+                background-image: url(image/105-1055294_creepy-forest-wallpaper-hd-pics-full-dark-for.jpg);
+            }
+            ul{
+                list-style-type: none;
+                margin-bottom: 10px;
+                padding: 0;
+                overflow: hidden;
+                background-color:aquamarine;
+            }
+            li{
+                float: left;
+                color: darkblues;
+            }
+            li a { 
+                display: block;
+                text-align: center;
+                padding: 10px 20px;
+                text-decoration: none;
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-gap: 20px;
+                padding: 20px;
+                max-width: 100%;
+                max-height: 90%;
+                align-content:space-around ;
+            }
+            .grid_element{
+                background-color: rgb(255,255,255,0.8);
+                padding: 5px;
+                border: 1px solid black;
+                font-size: 20px;
+                text-align: center;
+            }
+            .grid_element_1{
+                grid-column: 1/4;
+                background-color: rgb(255,255,255,0.8);
+                padding: 5px;
+                border: 1px solid black;
+                font-size: 20px;
+                display: table-row;
+            }
+            .grid_element_7{
+                grid-column: 1/4;
+                background-color: rgb(255,255,255,0.8);
+                padding: 5px;
+                border: 1px solid black;
+                font-size: 20px;
+                text-align: center;
+            }
+            .grid_element_3{
+                grid-row: 2/4;
+                grid-column:2/3 ;
+                background-color: rgb(255,255,255,0.8);
+                padding: 5px;
+                border: 1px solid black;
+                font-size: 20px;
+                text-align: center;
+            }
+            img{
+                max-height: 70px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#newsandupdate">NEWS and UPDATES</a></li>
+            <li><a href="#about">ABOUT</a></li>
+        </ul>
+        </div>
+        <div class="grid">
+            <div class="grid_element_1"><div style="display: table-cell;width: 60%; max-width: 70%;"><img src="image/pngtree-emergency-service-hospital-twenty-four--circle-number-24-hour-image_60946.jpg"></div>
+                                        <div style="display: table-cell; width:30%;"><h2>KIT Hospital</h2></div></div>
+            <div class="grid_element">Service Time:<br>24h/7days</div>
+            <div class="grid_element_3"><p style="color: seagreen;">Emergency Contact</p>
+                                        <p><u>012 3456789</u></p></div>
+            <div class="grid_element">Location:<br>Kirirum Mountain</div>
+            <div class="grid_element">Figure out the <br>symtdrome and how to protect</div>
+            <div class="grid_element">Check the available <br>places in Hospital</div>
+            <div class="grid_element_7"><mark style="background-color:cadetblue;">We have many kind of Service such as:</mark>:<br>Operation Service<br>Health Care<br>Pharmacy<br>Emergency Ambulance    </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function check(){
+                var number = parseFloat(document.getElementById("num").value);
+                var option = document.getElementById("opt").value;
+                var result = document.getElementById("result").value;
+                    if option == "odd" && number % 2 != 0 {
+                         document.getElementById("result").value = "Yes, It is ODD";
+                     }
+                    if option == "odd" && number % 2 == 0{
+                        document.getElementById("result").value = "No it is EVEN";
+                    }
+                    if option == "even" && number % 2 != 0 {
+                         document.getElementById("result").value = "No it is ODD";
+                    }
+                    if option == "even" && number % 2 == 0 {
+                        document.getElementById("result").value = "Yes,it is EVEN";
+                    } 
+
+            }
+        </script>
+    
+    
+    </head>
+    <body>
+        <input type="number" id="num"><br>
+        <select id="opt">
+            <option value="odd">odd</option>
+            <option value="even">even</option>
+        </select>
+        <button onclick="check();">Check</button>
+        <input type="text" id="result">
+    </body>
+</html>

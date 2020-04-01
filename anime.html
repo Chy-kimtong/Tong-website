@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+    .slide {display:none;}
+    .div{
+        display: block;
+        position: absolute;
+        max-height: 99%;
+        max-width: 99%;
+        background-size: cover;
+        padding: 10px;
+    }
+</style>
+</head>
+
+<body>
+
+<div>
+      <img class="slide" src="105-1055294_creepy-forest-wallpaper-hd-pics-full-dark-for.jpg" style="max-width:100% ; max-    height: 70%">
+      <img class="slide" src="6b6e120da4792766f06b2fa24c7fd776.jpg" style="max-width:100% ; max-height: 70%">
+      <img class="slide" src="wp2579268.jpg" style="max-width:100% ; max-height: 70%">
+      <img class="slide" src="1244604.jpg" style="max-width:100% ; max-height: 70%">
+      <img class="slide" src="137912.jpg" style="max-width:100% ; max-height: 70%">
+
+</div>
+
+<script>
+var myValue = 0;
+slide_shows();
+
+function slide_shows() {
+  var i;
+  var x = document.getElementsByClassName("slide");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myValue++;
+  if (myValue > x.length) {myValue = 1}    
+  x[myValue-1].style.display = "block";  
+  setTimeout(slide_shows, 4000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

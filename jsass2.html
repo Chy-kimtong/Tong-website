@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function division()
+            {
+                var year = parseFloat(document.getElementById('year').value);
+                var result = document.getElementById('result').value;
+                if(year%4==0)
+                {
+                    document.getElementById('result').value="This is the leap year";
+                }
+                else
+                {
+                    document.getElementById('result').value="this is not the leap year";
+                }
+            }
+        </script>
+    
+    </head>
+    <body>
+        <h1>Leap year or not, test it now</h1>
+        <input type="text" id="year" placeholder="Year">
+        <button onclick="division()">click and see</button>
+        <input type="text" id="result" placeholder="Leap year or Not">
+    
+    
+    </body>
+</html>

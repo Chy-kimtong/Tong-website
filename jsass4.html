@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function pn()
+            { 
+                var n = parseFloat(document.getElementById('n').value);
+                var result = document.getElementById('result').value;
+                if(n>0){
+                    document.getElementById('result').value="This is positive number";
+            }
+                else{
+                    document.getElementById('result').value="This is negative number";
+                }
+            }
+        </script>
+    
+    </head>
+    <body>
+        <h1>Positive negative checking</h1>
+        <input type="text" id="n" placeholder="Number">
+        <button onclick="pn()">Check</button>
+        <input type="text" id="result" placeholder="">
+    
+    </body>
+</html>

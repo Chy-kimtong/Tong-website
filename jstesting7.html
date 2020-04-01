@@ -1,0 +1,20 @@
+<html>
+<body>
+
+<h1>regular expression</h1>
+
+<button onclick="reg()">click to match</button>
+
+<p id="d"></p>
+
+<script>
+function reg() {
+var s = "seyon susdey";
+var p = /\by/;
+var r = s.search(p);
+document.getElementById("d").innerHTML = r;
+}
+</script>
+
+</body>
+</html>
